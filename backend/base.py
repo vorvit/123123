@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-dotenv_path = os.path.join(project_root, 'db', '.db.env')
+dotenv_path = os.path.join(project_root, '.env')
 load_dotenv(dotenv_path)
 
 HOST = os.environ.get('DB_HOST', 'postgres')
